@@ -1,0 +1,54 @@
+
+.flex-grid-2-6-4 {
+  display: flex;
+  align-items: stretch;
+
+  .flex-col-2 {
+    width: 14%
+  }
+
+  .flex-col-6 {
+    width: 61%
+  }
+
+  .flex-col-4 {
+    width: 25%
+  }
+
+  .flex-col {
+    flex: 1;
+
+
+  }
+
+  @media (max-width: 400px) {
+    display: block;
+  }
+
+  .flex-dir-col {
+    flex-direction: column;
+    display: flex;
+    .flex-header {
+      flex: 1;
+      flex-direction: row;
+    }
+    .flex-content {
+      flex: 20;
+      flex-direction: row;
+    }
+  }
+}
+
+#mapdiv {
+  height: 100%;
+}
+
+#content-wrapper {
+  .flex-header {
+    padding: 20px 40px 0;
+  }
+}
+
+#graph-sidebar {
+  padding: 20px 40px;
+}
